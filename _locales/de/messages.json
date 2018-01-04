@@ -1,0 +1,31 @@
+{
+  "extensionName": {
+    "message": "New Tab Here",
+    "description": "Name of the extension."
+  },
+
+  "extensionDescription": {
+    "message": "Mithilfe dieser Erweiterung können Sie schnell an beliebiger Stelle einen neuen Tab öffnen.",
+    "description": "Description of the add-on."
+  },
+
+  "keyboardDescNewTabAtCurrPos": {
+    "message": "Öffnet einen Tab rechts vom aktuell ausgewählten.",
+    "description": "Description for the keyboard shortcut to open a new tab at selected tab's position (right)."
+  },
+
+  "NewTabHerePageContextMenu": {
+    "message": "Neuen Tab hier öffnen",
+    "description": "Open new tab in page's context menu"
+  },
+
+  "NewTabHereTabContextMenu": {
+    "message": "Neuen Tab hier öffnen",
+    "description": "Open new tab in tab's context menu"
+  },
+
+  "NewTabHereButtonCaption": {
+    "message": "Neuen Tab hier (rechts vom aktuell ausgewählten Tab) öffnen",
+    "description": "New tab here button caption"
+  }
+}

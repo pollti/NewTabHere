@@ -1,7 +1,7 @@
 {
 
   "manifest_version": 2,
-  "name": "NewTabHere",
+  "name": "__MSG_extensionName__",
   "version": "0.9",
 
   "applications": {
@@ -11,7 +11,7 @@
     }
   },
 
-  "description": "Lets you open a new tab at any position",
+  "description": "__MSG_extensionDescription__",
   "homepage_url": "https:/github.com/pollti/NewTabHere",
 
   "icons": {
@@ -33,8 +33,23 @@
       "suggested_key": {
         "default": "Ctrl+Y"
       },
-      "description": "Opens a new tab on the left of the current tab"
+      "description": "__MSG_keyboardDescNewTabAtCurrPos__"
     }
-  }
+  },
+  
+  "browser_action": {
+    "default_icon": {
+      "48": "icons/NTH-48.png"
+    },
+    "theme_icons": [{
+      "light": "icons/NTH-48-l.png",
+      "dark": "icons/NTH-48.png",
+      "size": 48
+    }],
+    "default_title": "__MSG_NewTabHereButtonCaption__",
+    "default_area": "tabstrip"
+  },
+
+  "default_locale": "en"
 
 }

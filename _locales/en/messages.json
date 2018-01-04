@@ -1,0 +1,31 @@
+{
+  "extensionName": {
+    "message": "New Tab Here",
+    "description": "Name of the extension."
+  },
+
+  "extensionDescription": {
+    "message": "Lets you open a new tab at any position.",
+    "description": "Description of the add-on."
+  },
+
+  "keyboardDescNewTabAtCurrPos": {
+    "message": "Opens a new tab on the right of the current tab.",
+    "description": "Description for the keyboard shortcut to open a new tab at selected tab's position (right)."
+  },
+
+  "NewTabHerePageContextMenu": {
+    "message": "Open new tab here",
+    "description": "Open new tab in page's context menu"
+  },
+
+  "NewTabHereTabContextMenu": {
+    "message": "New tab here",
+    "description": "Open new tab in tab's context menu"
+  },
+
+  "NewTabHereButtonCaption": {
+    "message": "New tab here (currently selected tab)",
+    "description": "New tab here button caption"
+  }
+}
