@@ -28,12 +28,25 @@ browser.contextMenus.create({
   contexts: ["all"]
 }, onCreated)
 
+if(browser.contextMenus.ContextType.TAB)
+{
+  browser.contextMenus.create({
+    id: "NTH-here",
+    title: "New tab here",
+    contexts: [browser.contextMenus.ContextType.TAB]
+  }, onCreated)
+}
+
 browser.contextMenus.onClicked.addListener(
   function(info, tab) {
     switch (info.menuItemId) {
       case "NTH-left":
-        var querying = browser.tabs.query({currentWindow: true, active: true});
-	querying.then(openTabs, onError);
+	//var querying = browser.tabs.query({currentWindow: true, active: true});
+	//querying.then(openTabs, onError);
+	openTabs([tab]);
+        break;
+      case "NTH-here":
+        openTabs([tab]);
         break;
   }
 })
