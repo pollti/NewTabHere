@@ -19,6 +19,15 @@
 
   "background": {
       "scripts": ["back/background.js"]
+  },
+
+  "commands": {
+    "new-tab-here": {
+      "suggested_key": {
+        "default": "Ctrl+Y"
+      },
+      "description": "Opens a new tab on the left of the current tab"
+    }
   }
 
 }

@@ -41,8 +41,6 @@ browser.contextMenus.onClicked.addListener(
   function(info, tab) {
     switch (info.menuItemId) {
       case "NTH-left":
-	//var querying = browser.tabs.query({currentWindow: true, active: true});
-	//querying.then(openTabs, onError);
 	openTabs([tab]);
         break;
       case "NTH-here":
@@ -50,3 +48,11 @@ browser.contextMenus.onClicked.addListener(
         break;
   }
 })
+
+browser.commands.onCommand.addListener(function(command) {
+  if (command == "new-tab-here") {
+    var querying = browser.tabs.query({currentWindow: true, active: true});
+    querying.then(openTabs, onError);
+    console.log("Opening new tab (keyboard shortcut)");
+  }
+});
