@@ -4,6 +4,13 @@
   "name": "NewTabHere",
   "version": "0.9",
 
+  "applications": {
+    "gecko": {
+      "id": "newtabhere@pollti",
+      "strict_min_version": "57.0a1"
+    }
+  },
+
   "description": "Lets you open a new tab at any position",
   "homepage_url": "https:/github.com/pollti/NewTabHere",
 
@@ -18,7 +25,7 @@
   ],
 
   "background": {
-      "scripts": ["back/background.js"]
+      "scripts": ["src/background.js"]
   },
 
   "commands": {
