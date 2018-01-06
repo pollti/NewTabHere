@@ -22,7 +22,8 @@
 
   "permissions": [
     "contextMenus",
-    "tabs"
+    "tabs",
+    "storage"
   ],
 
   "background": {
@@ -39,6 +40,7 @@
   },
   
   "browser_action": {
+    "browser_style": true,
     "default_icon": {
       "48": "icons/NTH-48.png"
     },
@@ -49,6 +51,11 @@
     }],
     "default_title": "__MSG_NewTabHereButtonCaption__",
     "default_area": "tabstrip"
+  },
+
+  "options_ui": {
+    "browser_style": true,
+    "page": "opt/options.html"
   },
 
   "default_locale": "en"
