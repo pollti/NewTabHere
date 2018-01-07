@@ -24,8 +24,75 @@
     "description": "Open new tab in tab's context menu"
   },
 
+  "NewTabHereToolsMenu": {
+    "message": "Neuen Tab hier öffnen",
+    "description": "Open new tab in tools menu"
+  },
+
   "NewTabHereButtonCaption": {
-    "message": "Neuen Tab hier (rechts vom aktuell ausgewählten Tab) öffnen",
+    "message": "Neuen Tab hier (beim aktuell ausgewählten Tab) öffnen",
     "description": "New tab here button caption"
+  },
+
+  "SettingsFile": {
+    "message": "opt/options_de.html",
+    "description": "includes language code for settings file"
+  },
+
+
+
+  "DefaultSetting": {
+    "message": "Standardwert",
+    "description": "Default value for a setting"
+  },
+
+  "SettingLeft": {
+    "message": "Links",
+    "description": "Setting: open tab on left"
+  },
+
+  "SettingRight": {
+    "message": "Rechts",
+    "description": "Setting: open tab on right"
+  },
+
+  "SettingDisabled": {
+    "message": "Deaktiviert",
+    "description": "Setting: disable this feature"
+  },
+
+  "SaveSettings": {
+    "message": "Speichern",
+    "description": "Save settings (button)"
+  },
+
+  "ResetSettings": {
+    "message": "Zurücksetzen",
+    "description": "Reset settings (button)"
+  },
+
+  "DisableInCustomizationMenu": {
+    "message": "Nutzen Sie Firefox' Anpassungs-Menü um die Schaltfläche auszublenden.",
+    "description": "Info to use Firefox's customization menu to disable toolbar button."
+  },
+
+  "NewTabPos_TB_Button_Setting": {
+    "message": "Wo soll der neue Tab (relativ zum aktuell ausgewählten Tab) geöffnet werden, wenn auf die Schaltfläche geklickt wurde:"
+  },
+
+  "NewTabPos_Page_Context_Setting": {
+    "message": "Wo soll der neue Tab (relativ zum aktuell ausgewählten Tab) geöffnet werden, wenn das Kontextmenü einer Seite verwendet wurde:"
+  },
+
+  "NewTabPos_Tab_Context_Setting": {
+    "message": "Wo soll der neue Tab (relativ zum Tab auf den geklickt wurde) geöffnet werden, wenn das Kontextmenü eines Tabs verwendet wurde:"
+  },
+
+  "NewTabPos_ToolsMenu_Setting": {
+    "message": "Wo soll der neue Tab (relativ zum aktuell ausgewählten Tab) geöffnet werden, wenn der Eintrag im Extras-Menü verwendet wurde:"
+  },
+
+  "NewTabPos_Keyboard_Setting": {
+    "message": "Wo soll der neue Tab (relativ zum aktuell ausgewählten Tab) geöffnet werden, wenn die Tastenkombination (Strg + Y) verwendet wurde:"
   }
 }

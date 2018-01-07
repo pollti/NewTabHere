@@ -10,22 +10,89 @@
   },
 
   "keyboardDescNewTabAtCurrPos": {
-    "message": "Opens a new tab on the right of the current tab.",
+    "message": "Opens a new tab at the currently selected tab's posizton.",
     "description": "Description for the keyboard shortcut to open a new tab at selected tab's position (right)."
   },
 
   "NewTabHerePageContextMenu": {
-    "message": "Open new tab here",
+    "message": "New Tab Here",
     "description": "Open new tab in page's context menu"
   },
 
   "NewTabHereTabContextMenu": {
-    "message": "New tab here",
+    "message": "New Tab Here",
     "description": "Open new tab in tab's context menu"
   },
 
+  "NewTabHereToolsMenu": {
+    "message": "New Tab Here",
+    "description": "Open new tab in tools menu"
+  },
+
   "NewTabHereButtonCaption": {
-    "message": "New tab here (currently selected tab)",
+    "message": "New Tab Here (currently selected tab)",
     "description": "New tab here button caption"
+  },
+
+  "SettingsFile": {
+    "message": "opt/options_en.html",
+    "description": "includes language code for settings file"
+  },
+
+
+
+  "DefaultSetting": {
+    "message": "Default",
+    "description": "Default value for a setting"
+  },
+
+  "SettingLeft": {
+    "message": "Left",
+    "description": "Setting: open tab on left"
+  },
+
+  "SettingRight": {
+    "message": "Right",
+    "description": "Setting: open tab on right"
+  },
+
+  "SettingDisabled": {
+    "message": "Disabled",
+    "description": "Setting: disable this feature"
+  },
+
+  "SaveSettings": {
+    "message": "Save",
+    "description": "Save settings (button)"
+  },
+
+  "ResetSettings": {
+    "message": "Reset",
+    "description": "Reset settings (button)"
+  },
+
+  "DisableInCustomizationMenu": {
+    "message": "To disable the toolbar button use Firefox' customization menu.",
+    "description": "Info to use Firefox's customization menu to disable toolbar button."
+  },
+
+  "NewTabPos_TB_Button_Setting": {
+    "message": "Where shall the new tab be opened (relative to the currently selected tab) when the toolbar button is clicked:"
+  },
+
+  "NewTabPos_Page_Context_Setting": {
+    "message": "Where shall the new tab be opened (relative to the currently selected tab) when a page's contextmenu is used:"
+  },
+
+  "NewTabPos_Tab_Context_Setting": {
+    "message": "Where shall the new tab be opened (relative to the tab clicked on) when a tab's contextmenu is used:"
+  },
+
+  "NewTabPos_ToolsMenu_Setting": {
+    "message": "Where shall the new tab be opened (relative to the currently selected tab) when the tools menu entry is used:"
+  },
+
+  "NewTabPos_Keyboard_Setting": {
+    "message": "Where shall the new tab be opened (relative to the currently selected tab) when the keyboard shortcut (Ctrl + Y) is used:"
   }
 }
