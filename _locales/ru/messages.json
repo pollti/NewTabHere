@@ -1,0 +1,96 @@
+{
+  "extensionName": {
+    "message": "New Tab Here",
+    "description": "Name of the extension."
+  },
+
+  "extensionDescription": {
+    "message": "Позволяет открыть новую вкладку в любой позиции на панели вкладок.",
+    "description": "Description of the add-on."
+  },
+
+  "keyboardDescNewTabAtCurrPos": {
+    "message": "Открывает новую вкладку рядом с активной.",
+    "description": "Description for the keyboard shortcut to open a new tab at selected tab's position (right)."
+  },
+
+  "NewTabHerePageContextMenu": {
+    "message": "Новая вкладка здесь",
+    "description": "Open new tab in page's context menu"
+  },
+
+  "NewTabHereTabContextMenu": {
+    "message": "Открыть здесь новую вкладку",
+    "description": "Open new tab in tab's context menu"
+  },
+
+  "N ewTabHereToolsMenu": {
+    "message": "Новая вкладка здесь",
+    "description": "Open new tab in tools menu"
+  },
+
+  "NewTabHereButtonCaption": {
+    "message": "Новая вкладка (рядом с активной)",
+    "description": "New tab here button caption"
+  },
+
+  "SettingsFile": {
+    "message": "opt/options_ru.html",
+    "description": "includes language code for settings file"
+  },
+
+  "DefaultSetting": {
+    "message": "По умолчанию",
+    "description": "Default value for a setting"
+  },
+
+  "SettingLeft": {
+    "message": "Слева",
+    "description": "Setting: open tab on left"
+  },
+
+  "SettingRight": {
+    "message": "Справа",
+    "description": "Setting: open tab on right"
+  },
+
+  "SettingDisabled": {
+    "message": "Отключено",
+    "description": "Setting: disable this feature"
+  },
+
+  "SaveSettings": {
+    "message": "Сохранить",
+    "description": "Save settings (button)"
+  },
+
+  "ResetSettings": {
+    "message": "Сброс",
+    "description": "Reset settings (button)"
+  },
+
+  "DisableInCustomizationMenu": {
+    "message": "Чтобы убрать кнопку с панели инструментов используйте пункт 'Персонализация' (в меню Firefox).",
+    "description": "Info to use Firefox's customization menu to disable toolbar button."
+  },
+
+  "NewTabPos_TB_Button_Setting": {
+    "message": "С какой стороны (от активной вкладки) должна открываться новая, при использовании кнопки на панели инструментов:"
+  },
+
+  "NewTabPos_Page_Context_Setting": {
+    "message": "С какой стороны (от активной вкладки) должна открываться новая, при использовании пункта контекстного меню страницы:"
+  },
+
+  "NewTabPos_Tab_Context_Setting": {
+    "message": "С какой стороны (от активной вкладки) должна открываться новая, при использовании пункта в контекстном меню вкладок:"
+  },
+
+  "NewTabPos_ToolsMenu_Setting": {
+    "message": "С какой стороны (от активной вкладки) должна открываться новая, при использовании пункта в меню 'Инструменты':"
+  },
+
+  "NewTabPos_Keyboard_Setting": {
+    "message": "С какой стороны (от активной вкладки) должна открываться новая, при использовании сочетания клавиш (Ctrl + Y):"
+  }
+}
