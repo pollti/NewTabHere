@@ -13,9 +13,11 @@ Tabs are opened on the right of the currently selected tab.
 Languages:
 * English
 * German
+* Russian
 
 Future features:
 * Settings (open tabs on right/left of currently selected tab; other keyboard shortcut)
+* new logo
 * new ideas or pull requests are welcome
 
 Known bugs:
