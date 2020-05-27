@@ -34,11 +34,6 @@
     "description": "New tab here button caption"
   },
 
-  "SettingsFile": {
-    "message": "opt/options_ru.html",
-    "description": "includes language code for settings file"
-  },
-
   "DefaultSetting": {
     "message": "По умолчанию",
     "description": "Default value for a setting"

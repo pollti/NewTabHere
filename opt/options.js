@@ -13,7 +13,7 @@ function saveOptions(e) {
     toolsmen_def_lrd: document.querySelector("#toolsmen_def_lrd").value,
     keyboard_def_lrd: document.querySelector("#keyboard_def_lrd").value
   });
-  //recreateMenus();
+  recreateMenus();
 }
 
 var defaultSettings = {
@@ -28,7 +28,7 @@ function clearOptions(e) {
   e.preventDefault();
   browser.storage.sync.set(defaultSettings);
   restoreOptions();
-  //recreateMenus();
+  recreateMenus();
 }
 
 function restoreOptions() {

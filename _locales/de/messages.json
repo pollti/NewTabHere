@@ -34,13 +34,6 @@
     "description": "New tab here button caption"
   },
 
-  "SettingsFile": {
-    "message": "opt/options_de.html",
-    "description": "includes language code for settings file"
-  },
-
-
-
   "DefaultSetting": {
     "message": "Standardwert",
     "description": "Default value for a setting"
@@ -76,6 +69,16 @@
     "description": "Info to use Firefox's customization menu to disable toolbar button."
   },
 
+  "ChangeKeyboardShortcutDesc": {
+    "message": "Dieses Tastaturkürzel kann in den Tastenkombinationen-Einstellungen für Add-ons von Firefox angepasst werden, siehe",
+    "description": "Info on how to change keyboard shortcut."
+  },
+
+  "MozSupport": {
+    "message": "Mozilla-Hilfe",
+    "description": "Mozilla Support site (for links)."
+  },
+
   "NewTabPos_TB_Button_Setting": {
     "message": "Wo soll der neue Tab (relativ zum aktuell ausgewählten Tab) geöffnet werden, wenn auf die Schaltfläche geklickt wurde:"
   },
@@ -93,6 +96,6 @@
   },
 
   "NewTabPos_Keyboard_Setting": {
-    "message": "Wo soll der neue Tab (relativ zum aktuell ausgewählten Tab) geöffnet werden, wenn die Tastenkombination (Strg + Y) verwendet wurde:"
+    "message": "Wo soll der neue Tab (relativ zum aktuell ausgewählten Tab) geöffnet werden, wenn die Tastenkombination (Standard: Strg + Y) verwendet wurde:"
   }
 }

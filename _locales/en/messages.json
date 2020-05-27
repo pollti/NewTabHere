@@ -10,7 +10,7 @@
   },
 
   "keyboardDescNewTabAtCurrPos": {
-    "message": "Opens a new tab at the currently selected tab's posizton.",
+    "message": "Opens a new tab at the currently selected tab's position.",
     "description": "Description for the keyboard shortcut to open a new tab at selected tab's position (right)."
   },
 
@@ -33,13 +33,6 @@
     "message": "New Tab Here (currently selected tab)",
     "description": "New tab here button caption"
   },
-
-  "SettingsFile": {
-    "message": "opt/options_en.html",
-    "description": "includes language code for settings file"
-  },
-
-
 
   "DefaultSetting": {
     "message": "Default",
@@ -76,6 +69,16 @@
     "description": "Info to use Firefox's customization menu to disable toolbar button."
   },
 
+  "ChangeKeyboardShortcutDesc": {
+    "message": "This shortcut can be changed in the add-on shortcut settings, see",
+    "description": "Info on how to change keyboard shortcut."
+  },
+
+  "MozSupport": {
+    "message": "Mozilla Support",
+    "description": "Mozilla Support site (for links)."
+  },
+
   "NewTabPos_TB_Button_Setting": {
     "message": "Where shall the new tab be opened (relative to the currently selected tab) when the toolbar button is clicked:"
   },
@@ -93,6 +96,6 @@
   },
 
   "NewTabPos_Keyboard_Setting": {
-    "message": "Where shall the new tab be opened (relative to the currently selected tab) when the keyboard shortcut (Ctrl + Y) is used:"
+    "message": "Where shall the new tab be opened (relative to the currently selected tab) when the keyboard shortcut (default: Ctrl + Y) is used:"
   }
 }

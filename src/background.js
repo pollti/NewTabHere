@@ -1,5 +1,8 @@
 var lrd = 1;
 
+// Content Security Policy: The page’s settings blocked the loading of a resource at inline (“default-src”).
+// FIXED: Currently blocking context menus left.
+
 var defaultSettings = {
   toolbar_button_def_lr: "right",
   tab_context_def_lrd: "left",
@@ -46,8 +49,29 @@ function openTabs(tabs) {
   lrd = 1;
 }
 
+function openTabsRight(tabs) {
+  for (let tab of tabs) {
+    if (lrd < 2){
+      var NTHcreate = browser.tabs.create({index: tab.index + 1});
+      NTHcreate.then(onSuccess, onError);
+    }
+  }
+  lrd = 1;
+}
+
+function openTabsLeft(tabs) {
+  for (let tab of tabs) {
+    if (lrd < 2){
+      var NTHcreate = browser.tabs.create({index: tab.index});
+      NTHcreate.then(onSuccess, onError);
+    }
+  }
+  lrd = 1;
+}
+
 function createMenus(){
 
+  // Page context menu.
   function createPageContextMenu(setting) {
     if(setting.page_context_def_lrd != "disabled"){
       browser.menus.create({
@@ -58,6 +82,7 @@ function createMenus(){
     }
   }
 
+  // Tab context menu.
   function createTabContextMenu(setting) {
     if(setting.tab_context_def_lrd != "disabled"){
       if(browser.menus.ContextType.TAB)
@@ -71,8 +96,9 @@ function createMenus(){
     }
   }
 
+  // Tools menu entry.
   function createFileMenuEntry(setting) {
-    if(setting.tab_context_def_lrd != "disabled"){
+    if(setting.toolsmen_def_lrd != "disabled"){
       browser.menus.create({
         id: "NTH-menu",
         title: browser.i18n.getMessage("NewTabHereToolsMenu"),
@@ -90,12 +116,12 @@ function createMenus(){
   var getting3 = browser.storage.sync.get("toolsmen_def_lrd");
   getting3.then(createFileMenuEntry, onError);
 
-
+  // Menu listeners.
   browser.menus.onClicked.addListener(
     function(info, tab) {
       switch (info.menuItemId) {
       case "NTH-page":
-        function setLRD(pos){
+        function setLRD1(pos){
           if(pos.page_context_def_lrd == "left"){
             lrd = 0;
           }
@@ -109,14 +135,16 @@ function createMenus(){
           //console.log(pos);
         }
         var getting = browser.storage.sync.get("page_context_def_lrd");
-        getting.then(setLRD, onError);
+        getting.then(setLRD1, onError);
         break;
       case "NTH-tab":
-        function setLRD(pos){
+        function setLRD2(pos){
           if(pos.tab_context_def_lrd == "left"){
+            //openTabsLeft([tab]);
             lrd = 0;
           }
           if(pos.tab_context_def_lrd == "right"){
+            //openTabsRight([tab]);
             lrd = 1;
           }
           if(pos.tab_context_def_lrd == "disabled"){
@@ -127,10 +155,10 @@ function createMenus(){
           //console.log(pos.tab_context_def_lrd);
         }
         var getting = browser.storage.sync.get("tab_context_def_lrd");
-        getting.then(setLRD, onError);
+        getting.then(setLRD2, onError);
         break;
       case "NTH-menu":
-        function setLRD(pos){
+        function setLRD3(pos){
           if(pos.toolsmen_def_lrd == "left"){
             lrd = 0;
           }
@@ -145,7 +173,7 @@ function createMenus(){
           //console.log(pos.tab_context_def_lrd);
         }
         var getting = browser.storage.sync.get("toolsmen_def_lrd");
-        getting.then(setLRD, onError);
+        getting.then(setLRD3, onError);
         break;
       }
     })
@@ -154,6 +182,7 @@ function createMenus(){
 
   createMenus();
 
+  // Keyboard shortcut.
   browser.commands.onCommand.addListener(function(command) {
     if (command == "new-tab-here") {
       function setLRD(pos){
@@ -175,6 +204,7 @@ function createMenus(){
     }
   });
 
+  // Toolbar button.
   browser.browserAction.onClicked.addListener(function() {
     function setLRD(pos){
       if(pos.toolbar_button_def_lr == "left"){
