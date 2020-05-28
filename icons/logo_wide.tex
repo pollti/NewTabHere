@@ -1,0 +1,21 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,arrows.meta}
+\usepackage[paperheight=9cm,paperwidth=18cm,margin=0mm]{geometry}
+\usepackage{ifthen}
+
+\begin{document}
+	\newboolean{light}
+	\setboolean{light}{true}
+	\ifthenelse{\boolean{light}}{\definecolor{fore}{HTML}{000000}}{\definecolor{fore}{HTML}{FFFFFF}}
+	\ifthenelse{\boolean{light}}{\definecolor{back}{HTML}{CD3D00}}{\definecolor{back}{HTML}{E25821}}
+	\centering
+	\begin{tikzpicture}
+		\path (0,0)--(0,3.9);
+		\path [draw,line width=0.5cm,rounded corners,color=fore] (-2,-4) -- (0,0) -- (9,0) -- (11, -4);
+		\path [draw,line width=0.5cm,color=fore] (10,-2) -- (11, -4) -- (-2,-4) -- (-1,-2);
+		\path [draw,line width=0.5cm,color=gray] (2,0) -- (7,0);
+		\path [draw,line width=1cm,color=fore] (2,-2) -- (1.5, 2.5) -- (7.5,2.5) -- (7,-2);
+		\draw [-{Latex[width=3cm,length=1.7cm]},color=back,line width=8mm] (4.5,2) -- (4.5,-3);
+	\end{tikzpicture}
+\end{document}

@@ -16,8 +16,8 @@
   "homepage_url": "https:/github.com/pollti/NewTabHere",
 
   "icons": {
-    "48": "icons/NTH-48.png",
-    "96": "icons/NTH-96.png"
+    "48": "icons/logo.svg",
+    "96": "icons/logo.svg"
   },
 
   "permissions": [
@@ -42,11 +42,11 @@
   "browser_action": {
     "browser_style": true,
     "default_icon": {
-      "48": "icons/NTH-48.png"
+      "48": "icons/logo.svg"
     },
     "theme_icons": [{
-      "light": "icons/NTH-48-l.png",
-      "dark": "icons/NTH-48.png",
+      "light": "icons/logo-light.svg",
+      "dark": "icons/logo.svg",
       "size": 48
     }],
     "default_title": "__MSG_NewTabHereButtonCaption__",
