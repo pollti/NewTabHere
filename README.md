@@ -1,6 +1,8 @@
 # New Tab Here
 
-(German version below)
+Always having many open tabs? I won't blame you - but I may have a useful feature for you :) Ever wanted to open a new tab in the middle? New Tab Here lets you open tabs wherever you want.
+
+(German version below / Deutsche Version unten)
 
 Firefox extension to open tabs at specific positions | https://addons.mozilla.org/firefox/addon/new-tab-here/
 
@@ -20,7 +22,6 @@ Languages:
 * Russian
 
 Future features:
-* new logo
 * new ideas or pull requests are welcome
 
 Known bugs:
@@ -46,7 +47,6 @@ Sprachen:
 * Russisch
 
 Zukünftige Funkionen:
-* neues Logo
 * Neue Ideen und Pull Requests werden gerne angenommen
 
 Bekannte Probleme:
