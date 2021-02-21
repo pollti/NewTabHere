@@ -36,7 +36,7 @@ Aktuelle Funktionen:
   * über das Kontextmenü auf der Seite
   * über eine Schaltfläche (standardmäßig befindet sich diese in der Tableiste)
   * mit einer beliebigen Tastenkombination, standardmäßig Strg+Y
-  * über das Werkzeuge-Menü von firefox
+  * über das Werkzeuge-Menü von Firefox
 * Sie können Tabs an beliebiger Stelle öffnen, indem Sie das Kontektmenü eines Tabs öffnen
 
 Jede dieser Opionen kann in den Add-on-Einstellungen separat deaktiviert werden. Außerdem können Sie jeweils auswählen, ob neue Tabs auf der rechten oder linken Seite des aktuell ausgewählten (bzw. angeklickten) Tabs geöffnet werden.
